@@ -1,0 +1,72 @@
+connecting to:  192.168.0.170
+consumer received  11210 messages in 10.0148439407 secs ; rate=1119.33846062 msgs/sec
+consumer received  26165 messages in 20.0248379707 secs ; rate=1306.62730147 msgs/sec
+consumer received  43778 messages in 30.0349569321 secs ; rate=1457.56826284 msgs/sec
+consumer received  62188 messages in 40.0450110435 secs ; rate=1552.95249969 msgs/sec
+consumer received  80577 messages in 50.0550680161 secs ; rate=1609.76706643 msgs/sec
+consumer received  98823 messages in 60.0652620792 secs ; rate=1645.26044804 msgs/sec
+consumer received  117128 messages in 70.0748250484 secs ; rate=1671.47045917 msgs/sec
+consumer received  135535 messages in 80.0848491192 secs ; rate=1692.39252481 msgs/sec
+consumer received  153979 messages in 90.0948951244 secs ; rate=1709.07574494 msgs/sec
+consumer received  171954 messages in 100.104861021 secs ; rate=1717.7387616 msgs/sec
+consumer received  189856 messages in 110.114852905 secs ; rate=1724.16340749 msgs/sec
+consumer received  207749 messages in 120.124872923 secs ; rate=1729.44199602 msgs/sec
+consumer received  225860 messages in 130.134959936 secs ; rate=1735.58281426 msgs/sec
+consumer received  244199 messages in 140.144910097 secs ; rate=1742.47498415 msgs/sec
+consumer received  262518 messages in 150.154983997 secs ; rate=1748.3135958 msgs/sec
+consumer received  280870 messages in 160.164937973 secs ; rate=1753.62974915 msgs/sec
+consumer received  299103 messages in 170.174864054 secs ; rate=1757.62150106 msgs/sec
+consumer received  317481 messages in 180.18484807 secs ; rate=1761.97390291 msgs/sec
+consumer received  335574 messages in 190.194854021 secs ; rate=1764.36950267 msgs/sec
+consumer received  353788 messages in 200.204833984 secs ; rate=1767.13015844 msgs/sec
+consumer received  372125 messages in 210.214905024 secs ; rate=1770.21224997 msgs/sec
+consumer received  390390 messages in 220.224831104 secs ; rate=1772.68838415 msgs/sec
+consumer received  408769 messages in 230.234842062 secs ; rate=1775.44370061 msgs/sec
+consumer received  427033 messages in 240.244873047 secs ; rate=1777.49058527 msgs/sec
+consumer received  445389 messages in 250.254381895 secs ; rate=1779.74506032 msgs/sec
+consumer received  463231 messages in 260.263411045 secs ; rate=1779.85448719 msgs/sec
+consumer received  481128 messages in 270.270303965 secs ; rate=1780.17337807 msgs/sec
+consumer received  498917 messages in 280.279844999 secs ; rate=1780.06734662 msgs/sec
+consumer received  516728 messages in 290.289904118 secs ; rate=1780.04123695 msgs/sec
+consumer received  534743 messages in 300.299865961 secs ; rate=1780.69676551 msgs/sec
+consumer received  552966 messages in 310.309919119 secs ; rate=1781.97977548 msgs/sec
+consumer received  571230 messages in 320.316911936 secs ; rate=1783.32763184 msgs/sec
+consumer received  589527 messages in 330.326849937 secs ; rate=1784.67781263 msgs/sec
+consumer received  608172 messages in 340.336941957 secs ; rate=1786.97027864 msgs/sec
+consumer received  628168 messages in 350.346857071 secs ; rate=1792.98882614 msgs/sec
+consumer received  648528 messages in 360.35236907 secs ; rate=1799.70510996 msgs/sec
+consumer received  668746 messages in 370.357943058 secs ; rate=1805.67478715 msgs/sec
+Exception in thread Thread-2:
+Traceback (most recent call last):
+  File "/usr/lib64/python2.6/threading.py", line 532, in __bootstrap_inner
+    self.run()
+  File "/home/mce/pymsg/kafka/src/perftest.py", line 56, in run
+    textMessage = self.consumer.get_messages(block=True, timeout=1000000)
+  File "build/bdist.linux-x86_64/egg/kafka/consumer.py", line 303, in get_messages
+    messages.append(next(iterator))
+  File "build/bdist.linux-x86_64/egg/kafka/consumer.py", line 331, in __iter__
+    yield it.next()
+  File "build/bdist.linux-x86_64/egg/kafka/consumer.py", line 372, in __iter_partition__
+    min_bytes=fetch_size)
+  File "build/bdist.linux-x86_64/egg/kafka/client.py", line 277, in send_fetch_request
+    KafkaProtocol.decode_fetch_response)
+  File "build/bdist.linux-x86_64/egg/kafka/client.py", line 180, in _send_broker_aware_request
+    for response in decoder_fn(response):
+  File "build/bdist.linux-x86_64/egg/kafka/protocol.py", line 279, in decode_fetch_response
+    (message_set, cur) = read_int_string(data, cur)
+  File "build/bdist.linux-x86_64/egg/kafka/util.py", line 50, in read_int_string
+    raise BufferUnderflowError("Not enough data left")
+BufferUnderflowError: Not enough data left
+
+consumer received  679365 messages in 380.367859125 secs ; rate=1786.07362242 msgs/sec
+consumer received  679365 messages in 390.372409105 secs ; rate=1740.2997347 msgs/sec
+consumer received  679365 messages in 400.382059097 secs ; rate=1696.79181313 msgs/sec
+consumer received  679365 messages in 410.391992092 secs ; rate=1655.40510802 msgs/sec
+consumer received  679365 messages in 420.393558979 secs ; rate=1616.02142918 msgs/sec
+consumer received  679365 messages in 430.403198004 secs ; rate=1578.43855053 msgs/sec
+consumer received  679365 messages in 440.409323931 secs ; rate=1542.57633316 msgs/sec
+consumer received  679365 messages in 450.410205126 secs ; rate=1508.32506073 msgs/sec
+consumer received  679365 messages in 460.416989088 secs ; rate=1475.54285811 msgs/sec
+consumer received  679365 messages in 470.426975012 secs ; rate=1444.14550204 msgs/sec
+consumer received  679365 messages in 480.437060118 secs ; rate=1414.05619257 msgs/sec
+consumer received  679365 messages in 490.447154999 secs ; rate=1385.19510833 msgs/sec

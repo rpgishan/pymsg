@@ -1,0 +1,13 @@
+connecting to:  tcp://localhost:61616?wireFormat=openwire
+Traceback (most recent call last):
+  File "../activemq/src/test_send.py", line 26, in <module>
+    conn = factory.createConnection()
+pyactivemq.CMSException: Connection refused
+	FILE: decaf/internal/net/tcp/TcpSocket.cpp, LINE: 607
+	FILE: decaf/internal/net/tcp/TcpSocket.cpp, LINE: 308
+	FILE: decaf/net/Socket.cpp, LINE: 333
+	FILE: activemq/transport/tcp/TcpTransport.cpp, LINE: 153
+	FILE: activemq/transport/tcp/TcpTransportFactory.cpp, LINE: 117
+	FILE: activemq/transport/tcp/TcpTransportFactory.cpp, LINE: 60
+	FILE: activemq/core/ActiveMQConnectionFactory.cpp, LINE: 282
+

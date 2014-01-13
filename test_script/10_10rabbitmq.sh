@@ -1,0 +1,21 @@
+#!/bin/sh
+stdbuf -oL python ../rabbitmq/src/test_send.py &> ../rabbitmq/results/10_10producer1.txt &
+stdbuf -oL python ../rabbitmq/src/test_send.py &> ../rabbitmq/results/10_10producer2.txt &
+stdbuf -oL python ../rabbitmq/src/test_send.py &> ../rabbitmq/results/10_10producer3.txt &
+stdbuf -oL python ../rabbitmq/src/test_send.py &> ../rabbitmq/results/10_10producer4.txt &
+stdbuf -oL python ../rabbitmq/src/test_send.py &> ../rabbitmq/results/10_10producer5.txt &
+stdbuf -oL python ../rabbitmq/src/test_send.py &> ../rabbitmq/results/10_10producer6.txt &
+stdbuf -oL python ../rabbitmq/src/test_send.py &> ../rabbitmq/results/10_10producer7.txt &
+stdbuf -oL python ../rabbitmq/src/test_send.py &> ../rabbitmq/results/10_10producer8.txt &
+stdbuf -oL python ../rabbitmq/src/test_send.py &> ../rabbitmq/results/10_10producer9.txt &
+stdbuf -oL python ../rabbitmq/src/test_send.py &> ../rabbitmq/results/10_10producer10.txt &
+stdbuf -oL python ../rabbitmq/src/test_receive_async.py &> ../rabbitmq/results/10_10consumer1.txt &
+stdbuf -oL python ../rabbitmq/src/test_receive_async.py &> ../rabbitmq/results/10_10consumer2.txt &
+stdbuf -oL python ../rabbitmq/src/test_receive_async.py &> ../rabbitmq/results/10_10consumer3.txt &
+stdbuf -oL python ../rabbitmq/src/test_receive_async.py &> ../rabbitmq/results/10_10consumer4.txt &
+stdbuf -oL python ../rabbitmq/src/test_receive_async.py &> ../rabbitmq/results/10_10consumer5.txt &
+stdbuf -oL python ../rabbitmq/src/test_receive_async.py &> ../rabbitmq/results/10_10consumer6.txt &
+stdbuf -oL python ../rabbitmq/src/test_receive_async.py &> ../rabbitmq/results/10_10consumer7.txt &
+stdbuf -oL python ../rabbitmq/src/test_receive_async.py &> ../rabbitmq/results/10_10consumer8.txt &
+stdbuf -oL python ../rabbitmq/src/test_receive_async.py &> ../rabbitmq/results/10_10consumer9.txt &
+stdbuf -oL python ../rabbitmq/src/test_receive_async.py &> ../rabbitmq/results/10_10consumer10.txt &

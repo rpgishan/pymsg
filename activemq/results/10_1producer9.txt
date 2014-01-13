@@ -1,0 +1,61 @@
+connecting to:  tcp://localhost:61616?wireFormat=openwire
+producer sent  8725 messages in 17.3595268726 secs ; rate=502.605863859 msgs/sec
+producer sent  18460 messages in 31.2855000496 secs ; rate=590.049702601 msgs/sec
+producer sent  29533 messages in 45.9865329266 secs ; rate=642.209754042 msgs/sec
+producer sent  37606 messages in 56.8957929611 secs ; rate=660.962753884 msgs/sec
+producer sent  46492 messages in 67.7864129543 secs ; rate=685.860159488 msgs/sec
+producer sent  55757 messages in 79.0426208973 secs ; rate=705.404240991 msgs/sec
+producer sent  65876 messages in 91.0513899326 secs ; rate=723.503507731 msgs/sec
+producer sent  74197 messages in 101.825849056 secs ; rate=728.665664835 msgs/sec
+producer sent  84254 messages in 114.584313869 secs ; rate=735.301344091 msgs/sec
+producer sent  94519 messages in 126.980777025 secs ; rate=744.356761821 msgs/sec
+producer sent  104986 messages in 140.292479992 secs ; rate=748.336617943 msgs/sec
+producer sent  113554 messages in 150.892879009 secs ; rate=752.547109881 msgs/sec
+producer sent  122284 messages in 161.519006014 secs ; rate=757.087373293 msgs/sec
+producer sent  130786 messages in 171.937141895 secs ; rate=760.661707868 msgs/sec
+producer sent  140592 messages in 183.674274921 secs ; rate=765.441976347 msgs/sec
+producer sent  149609 messages in 194.320173025 secs ; rate=769.90977144 msgs/sec
+producer sent  158092 messages in 204.654281855 secs ; rate=772.483226675 msgs/sec
+producer sent  166468 messages in 214.879626989 secs ; rate=774.703504154 msgs/sec
+producer sent  176081 messages in 226.148910999 secs ; rate=778.606446619 msgs/sec
+producer sent  185609 messages in 237.378211021 secs ; rate=781.912540335 msgs/sec
+producer sent  194773 messages in 247.827209949 secs ; rate=785.922579041 msgs/sec
+producer sent  204927 messages in 260.675473928 secs ; rate=786.138400025 msgs/sec
+producer sent  213596 messages in 271.607346058 secs ; rate=786.414664773 msgs/sec
+producer sent  223209 messages in 283.599896908 secs ; rate=787.055998376 msgs/sec
+producer sent  231888 messages in 294.270678997 secs ; rate=788.009192048 msgs/sec
+producer sent  243249 messages in 308.096543074 secs ; rate=789.522003633 msgs/sec
+producer sent  255766 messages in 323.585211992 secs ; rate=790.413129281 msgs/sec
+producer sent  264749 messages in 334.340416908 secs ; rate=791.85460869 msgs/sec
+producer sent  273786 messages in 345.218179941 secs ; rate=793.081059771 msgs/sec
+producer sent  283809 messages in 357.587533951 secs ; rate=793.67699669 msgs/sec
+producer sent  292675 messages in 368.329082966 secs ; rate=794.601929458 msgs/sec
+producer sent  300960 messages in 378.472651958 secs ; rate=795.196161315 msgs/sec
+producer sent  310109 messages in 389.219387054 secs ; rate=796.746026314 msgs/sec
+producer sent  320707 messages in 401.036701918 secs ; rate=799.694886943 msgs/sec
+producer sent  331659 messages in 414.029047966 secs ; rate=801.05249047 msgs/sec
+producer sent  340485 messages in 424.633060932 secs ; rate=801.833468295 msgs/sec
+producer sent  349325 messages in 435.228966951 secs ; rate=802.623507454 msgs/sec
+producer sent  360191 messages in 448.718019009 secs ; rate=802.711245686 msgs/sec
+producer sent  370643 messages in 461.284235001 secs ; rate=803.502421884 msgs/sec
+producer sent  378979 messages in 471.598154068 secs ; rate=803.605774813 msgs/sec
+producer sent  387421 messages in 482.165116072 secs ; rate=803.502756807 msgs/sec
+producer sent  396514 messages in 494.082457066 secs ; rate=802.525963692 msgs/sec
+producer sent  406244 messages in 513.073523045 secs ; rate=791.785157007 msgs/sec
+producer sent  412600 messages in 528.186647892 secs ; rate=781.163252889 msgs/sec
+producer sent  420027 messages in 541.424239874 secs ; rate=775.781668175 msgs/sec
+producer sent  430514 messages in 557.658410072 secs ; rate=772.003061774 msgs/sec
+producer sent  438895 messages in 570.895103931 secs ; rate=768.783962198 msgs/sec
+producer sent  444605 messages in 584.887140989 secs ; rate=760.155197203 msgs/sec
+producer sent  449759 messages in 599.06873107 secs ; rate=750.763604699 msgs/sec
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib64/python2.6/threading.py", line 532, in __bootstrap_inner
+    self.run()
+  File "/home/mce/pymsg/activemq/src/perftest.py", line 126, in run
+    self.producer.send(textMessage)
+CMSException: ActiveMQProducer - Producer Already Closed
+	FILE: activemq/core/ActiveMQProducer.cpp, LINE: 242
+	FILE: activemq/core/ActiveMQProducer.cpp, LINE: 126
+
+

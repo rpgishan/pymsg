@@ -1,0 +1,69 @@
+producer sent  3146 messages in 10.0559029579 secs ; rate=312.85106998 msgs/sec
+producer sent  6299 messages in 20.0659930706 secs ; rate=313.914191928 msgs/sec
+producer sent  9456 messages in 30.0758690834 secs ; rate=314.404879665 msgs/sec
+producer sent  12569 messages in 40.0815999508 secs ; rate=313.585286402 msgs/sec
+producer sent  15686 messages in 50.0910100937 secs ; rate=313.150003776 msgs/sec
+producer sent  18849 messages in 60.1009390354 secs ; rate=313.622387645 msgs/sec
+producer sent  21996 messages in 70.103867054 secs ; rate=313.763005157 msgs/sec
+producer sent  25136 messages in 80.1137230396 secs ; rate=313.753986787 msgs/sec
+producer sent  28253 messages in 90.1235189438 secs ; rate=313.491975581 msgs/sec
+producer sent  31336 messages in 100.132435083 secs ; rate=312.945550299 msgs/sec
+producer sent  34489 messages in 110.142066002 secs ; rate=313.13195087 msgs/sec
+producer sent  37613 messages in 120.151489973 secs ; rate=313.046471654 msgs/sec
+producer sent  40753 messages in 130.160749912 secs ; rate=313.097458546 msgs/sec
+producer sent  43863 messages in 140.164448023 secs ; rate=312.939555064 msgs/sec
+producer sent  46996 messages in 150.173398972 secs ; rate=312.944904503 msgs/sec
+producer sent  50163 messages in 160.178932905 secs ; rate=313.168524039 msgs/sec
+producer sent  53293 messages in 170.18879509 secs ; rate=313.140474212 msgs/sec
+producer sent  56429 messages in 180.198846102 secs ; rate=313.148509109 msgs/sec
+producer sent  59596 messages in 190.207740068 secs ; rate=313.320582951 msgs/sec
+producer sent  62726 messages in 200.217889071 secs ; rate=313.288689094 msgs/sec
+producer sent  65886 messages in 210.227080107 secs ; rate=313.403962832 msgs/sec
+producer sent  69016 messages in 220.23209691 secs ; rate=313.378481012 msgs/sec
+producer sent  72163 messages in 230.241046906 secs ; rate=313.423696469 msgs/sec
+producer sent  75313 messages in 240.244216919 secs ; rate=313.485173403 msgs/sec
+producer sent  78459 messages in 250.254301071 secs ; rate=313.517089074 msgs/sec
+producer sent  81573 messages in 260.263880014 secs ; rate=313.424206215 msgs/sec
+producer sent  84679 messages in 270.271903992 secs ; rate=313.310406111 msgs/sec
+producer sent  87803 messages in 280.282030106 secs ; rate=313.266604951 msgs/sec
+producer sent  90939 messages in 290.28788209 secs ; rate=313.271774713 msgs/sec
+producer sent  94086 messages in 300.297986031 secs ; rate=313.30879452 msgs/sec
+producer sent  97253 messages in 310.305100918 secs ; rate=313.410896928 msgs/sec
+producer sent  100423 messages in 320.314991951 secs ; rate=313.513268262 msgs/sec
+producer sent  103579 messages in 330.318490982 secs ; rate=313.573120572 msgs/sec
+producer sent  106749 messages in 340.328582048 secs ; rate=313.664516091 msgs/sec
+producer sent  109906 messages in 350.337582111 secs ; rate=313.714558791 msgs/sec
+producer sent  113066 messages in 360.34262991 secs ; rate=313.773588288 msgs/sec
+producer sent  116216 messages in 370.346651077 secs ; rate=313.803296619 msgs/sec
+producer sent  119359 messages in 380.356760025 secs ; rate=313.80801538 msgs/sec
+producer sent  122499 messages in 390.360287905 secs ; rate=313.810097481 msgs/sec
+producer sent  125649 messages in 400.369970083 secs ; rate=313.832228661 msgs/sec
+producer sent  128803 messages in 410.379995108 secs ; rate=313.862765085 msgs/sec
+producer sent  131959 messages in 420.388019085 secs ; rate=313.898098921 msgs/sec
+producer sent  135103 messages in 430.393671036 secs ; rate=313.905638238 msgs/sec
+producer sent  138209 messages in 440.403125048 secs ; rate=313.82384034 msgs/sec
+producer sent  141376 messages in 450.41306901 secs ; rate=313.88076796 msgs/sec
+producer sent  144529 messages in 460.423020124 secs ; rate=313.904808584 msgs/sec
+producer sent  147689 messages in 470.43296814 secs ; rate=313.942708106 msgs/sec
+producer sent  150863 messages in 480.442244053 secs ; rate=314.008607418 msgs/sec
+producer sent  154023 messages in 490.451632977 secs ; rate=314.043199459 msgs/sec
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib64/python2.6/threading.py", line 532, in __bootstrap_inner
+    self.run()
+  File "/home/mce/pymsg/rabbitmq/src/perftest.py", line 50, in run
+    delivery_mode=1))
+  File "/usr/lib/python2.6/site-packages/pika-0.9.14p0-py2.6.egg/pika/adapters/blocking_connection.py", line 559, in basic_publish
+    (properties, body), False)
+  File "/usr/lib/python2.6/site-packages/pika-0.9.14p0-py2.6.egg/pika/adapters/blocking_connection.py", line 1146, in _send_method
+    self.connection.send_method(self.channel_number, method_frame, content)
+  File "/usr/lib/python2.6/site-packages/pika-0.9.14p0-py2.6.egg/pika/adapters/blocking_connection.py", line 267, in send_method
+    self._send_method(channel_number, method_frame, content)
+  File "/usr/lib/python2.6/site-packages/pika-0.9.14p0-py2.6.egg/pika/connection.py", line 1494, in _send_method
+    self._send_frame(frame.Method(channel_number, method_frame))
+  File "/usr/lib/python2.6/site-packages/pika-0.9.14p0-py2.6.egg/pika/adapters/blocking_connection.py", line 410, in _send_frame
+    self.process_data_events()
+  File "/usr/lib/python2.6/site-packages/pika-0.9.14p0-py2.6.egg/pika/adapters/blocking_connection.py", line 236, in process_data_events
+    raise exceptions.ConnectionClosed()
+ConnectionClosed
+

@@ -1,0 +1,67 @@
+consumer received  157269 messages in 10.0109879971 secs ; rate=15709.6382541 msgs/sec
+consumer received  339554 messages in 20.0252490044 secs ; rate=16956.2935235 msgs/sec
+consumer received  522762 messages in 30.0352489948 secs ; rate=17404.9497672 msgs/sec
+consumer received  701784 messages in 40.0452549458 secs ; rate=17524.7729338 msgs/sec
+consumer received  887312 messages in 50.0552020073 secs ; rate=17726.6690457 msgs/sec
+consumer received  1076152 messages in 60.0652110577 secs ; rate=17916.3942164 msgs/sec
+consumer received  1263453 messages in 70.0752060413 secs ; rate=18029.9576894 msgs/sec
+consumer received  1451937 messages in 80.0855920315 secs ; rate=18129.8154034 msgs/sec
+consumer received  1641226 messages in 90.0952720642 secs ; rate=18216.560785 msgs/sec
+consumer received  1830502 messages in 100.105272055 secs ; rate=18285.770194 msgs/sec
+consumer received  2019541 messages in 110.115277052 secs ; rate=18340.2435527 msgs/sec
+consumer received  2208351 messages in 120.125277996 secs ; rate=18383.7326901 msgs/sec
+consumer received  2394700 messages in 130.135695934 secs ; rate=18401.5614072 msgs/sec
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib64/python2.6/threading.py", line 532, in __bootstrap_inner
+    self.run()
+  File "/home/mce/pymsg/redis/src/perftest.py", line 57, in run
+    next(self.ps_obj.listen())
+  File "/usr/lib/python2.6/site-packages/redis/client.py", line 1871, in listen
+    r = self.parse_response()
+  File "/usr/lib/python2.6/site-packages/redis/client.py", line 1815, in parse_response
+    response = self.connection.read_response()
+  File "/usr/lib/python2.6/site-packages/redis/connection.py", line 334, in read_response
+    response = self._parser.read_response()
+  File "/usr/lib/python2.6/site-packages/redis/connection.py", line 110, in read_response
+    response = self.read()
+  File "/usr/lib/python2.6/site-packages/redis/connection.py", line 103, in read
+    return self._fp.readline()[:-2]
+AttributeError: 'NoneType' object has no attribute 'readline'
+
+consumer received  2403455 messages in 140.15426898 secs ; rate=17148.6392637 msgs/sec
+consumer received  2403455 messages in 150.164313078 secs ; rate=16005.5005796 msgs/sec
+consumer received  2403455 messages in 160.174262047 secs ; rate=15005.2509641 msgs/sec
+consumer received  2403455 messages in 170.184268951 secs ; rate=14122.6625399 msgs/sec
+consumer received  2403455 messages in 180.194308043 secs ; rate=13338.1294121 msgs/sec
+consumer received  2403455 messages in 190.204272032 secs ; rate=12636.1778015 msgs/sec
+consumer received  2403455 messages in 200.214277029 secs ; rate=12004.4136495 msgs/sec
+consumer received  2403455 messages in 210.224276066 secs ; rate=11432.8137786 msgs/sec
+consumer received  2403455 messages in 220.234277964 secs ; rate=10913.1740173 msgs/sec
+consumer received  2403455 messages in 230.244277954 secs ; rate=10438.7176149 msgs/sec
+consumer received  2403455 messages in 240.254277945 secs ; rate=10003.7968962 msgs/sec
+consumer received  2403455 messages in 250.264276981 secs ; rate=9603.66788656 msgs/sec
+consumer received  2403455 messages in 260.274280071 secs ; rate=9234.31619652 msgs/sec
+consumer received  2403455 messages in 270.284276962 secs ; rate=8892.32265751 msgs/sec
+consumer received  2403455 messages in 280.293590069 secs ; rate=8574.77689522 msgs/sec
+consumer received  2403455 messages in 290.303277969 secs ; rate=8279.11767587 msgs/sec
+consumer received  2403455 messages in 300.313262939 secs ; rate=8003.1596889 msgs/sec
+consumer received  2403455 messages in 310.32326293 secs ; rate=7745.00428137 msgs/sec
+consumer received  2403455 messages in 320.3332479 secs ; rate=7502.98327057 msgs/sec
+consumer received  2403455 messages in 330.34325099 secs ; rate=7275.62919115 msgs/sec
+consumer received  2403455 messages in 340.353291988 secs ; rate=7061.6475779 msgs/sec
+consumer received  2403455 messages in 350.363255024 secs ; rate=6859.89459664 msgs/sec
+consumer received  2403455 messages in 360.373254061 secs ; rate=6669.34899557 msgs/sec
+consumer received  2403455 messages in 370.383254051 secs ; rate=6489.10277047 msgs/sec
+consumer received  2403455 messages in 380.392962933 secs ; rate=6318.34769358 msgs/sec
+consumer received  2403455 messages in 390.401503086 secs ; rate=6156.36717841 msgs/sec
+consumer received  2403455 messages in 400.411247015 secs ; rate=6002.46625917 msgs/sec
+consumer received  2403455 messages in 410.421267033 secs ; rate=5856.0683694 msgs/sec
+consumer received  2403455 messages in 420.431246042 secs ; rate=5716.64219209 msgs/sec
+consumer received  2403455 messages in 430.441349983 secs ; rate=5583.69914994 msgs/sec
+consumer received  2403455 messages in 440.451285124 secs ; rate=5456.80097022 msgs/sec
+consumer received  2403455 messages in 450.461246014 secs ; rate=5335.54222759 msgs/sec
+consumer received  2403455 messages in 460.471246004 secs ; rate=5219.55501208 msgs/sec
+consumer received  2403455 messages in 470.481249094 secs ; rate=5108.50327113 msgs/sec
+consumer received  2403455 messages in 480.491277933 secs ; rate=5002.07831105 msgs/sec
+consumer received  2403455 messages in 490.501280069 secs ; rate=4899.99740604 msgs/sec

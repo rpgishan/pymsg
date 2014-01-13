@@ -1,0 +1,61 @@
+consumer received  3150 messages in 10.090955019 secs ; rate=312.160741384 msgs/sec
+consumer received  6307 messages in 20.0975050926 secs ; rate=313.820047361 msgs/sec
+consumer received  9434 messages in 30.1046731472 secs ; rate=313.373274437 msgs/sec
+consumer received  12552 messages in 40.1103401184 secs ; rate=312.936763013 msgs/sec
+consumer received  15643 messages in 50.1151251793 secs ; rate=312.141293552 msgs/sec
+consumer received  18733 messages in 60.125262022 secs ; rate=311.566209776 msgs/sec
+consumer received  21843 messages in 70.1353290081 secs ; rate=311.440757588 msgs/sec
+consumer received  24950 messages in 80.1436262131 secs ; rate=311.316085619 msgs/sec
+consumer received  28064 messages in 90.1480751038 secs ; rate=311.310030388 msgs/sec
+consumer received  31167 messages in 100.15032506 secs ; rate=311.202185129 msgs/sec
+consumer received  34265 messages in 110.156913042 secs ; rate=311.056283748 msgs/sec
+consumer received  37367 messages in 120.162836075 secs ; rate=310.969690968 msgs/sec
+consumer received  40454 messages in 130.172982216 secs ; rate=310.77109329 msgs/sec
+consumer received  43563 messages in 140.180560112 secs ; rate=310.763489354 msgs/sec
+consumer received  46675 messages in 150.187415123 secs ; rate=310.778369558 msgs/sec
+consumer received  49799 messages in 160.195974112 secs ; rate=310.862993132 msgs/sec
+consumer received  52904 messages in 170.206067085 secs ; rate=310.82323272 msgs/sec
+consumer received  56033 messages in 180.206644058 secs ; rate=310.937481206 msgs/sec
+consumer received  59146 messages in 190.212009192 secs ; rate=310.947769551 msgs/sec
+consumer received  62242 messages in 200.217866182 secs ; rate=310.87135822 msgs/sec
+consumer received  65339 messages in 210.220512152 secs ; rate=310.811724942 msgs/sec
+consumer received  68438 messages in 220.227873087 secs ; rate=310.759937154 msgs/sec
+consumer received  71533 messages in 230.234869003 secs ; rate=310.695770409 msgs/sec
+consumer received  74647 messages in 240.238804102 secs ; rate=310.719994961 msgs/sec
+consumer received  77738 messages in 250.241449118 secs ; rate=310.65197342 msgs/sec
+consumer received  80845 messages in 260.25041604 secs ; rate=310.643115312 msgs/sec
+consumer received  83936 messages in 270.254571199 secs ; rate=310.581240597 msgs/sec
+consumer received  87039 messages in 280.26405406 secs ; rate=310.560697097 msgs/sec
+consumer received  90131 messages in 290.273138046 secs ; rate=310.50410178 msgs/sec
+consumer received  93237 messages in 300.280542135 secs ; rate=310.499639227 msgs/sec
+consumer received  96375 messages in 310.287729025 secs ; rate=310.598811957 msgs/sec
+consumer received  99531 messages in 320.296607018 secs ; rate=310.746345167 msgs/sec
+consumer received  102677 messages in 330.306711197 secs ; rate=310.853508328 msgs/sec
+consumer received  105809 messages in 340.315538168 secs ; rate=310.914396003 msgs/sec
+consumer received  108953 messages in 350.325514078 secs ; rate=311.005038519 msgs/sec
+consumer received  112096 messages in 360.335270166 secs ; rate=311.088059596 msgs/sec
+consumer received  115200 messages in 370.345085144 secs ; rate=311.061236185 msgs/sec
+consumer received  118286 messages in 380.355236053 secs ; rate=310.988225711 msgs/sec
+consumer received  121390 messages in 390.3599751 secs ; rate=310.969381451 msgs/sec
+consumer received  124492 messages in 400.363296032 secs ; rate=310.947584941 msgs/sec
+consumer received  127589 messages in 410.372877121 secs ; rate=310.909923909 msgs/sec
+consumer received  130698 messages in 420.377417088 secs ; rate=310.906330091 msgs/sec
+consumer received  133787 messages in 430.379288197 secs ; rate=310.858360681 msgs/sec
+consumer received  136891 messages in 440.389234066 secs ; rate=310.840932091 msgs/sec
+consumer received  139989 messages in 450.39696908 secs ; rate=310.812482344 msgs/sec
+consumer received  143099 messages in 460.406798124 secs ; rate=310.809919799 msgs/sec
+consumer received  146195 messages in 470.415546179 secs ; rate=310.778419607 msgs/sec
+consumer received  149310 messages in 480.421218157 secs ; rate=310.78977022 msgs/sec
+consumer received  152480 messages in 490.430091143 secs ; rate=310.91077557 msgs/sec
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib64/python2.6/threading.py", line 532, in __bootstrap_inner
+    self.run()
+  File "/home/mce/pymsg/rabbitmq/src/perftest.py", line 68, in run
+    next(self.consumer)
+  File "/usr/lib/python2.6/site-packages/pika-0.9.14p0-py2.6.egg/pika/adapters/blocking_connection.py", line 716, in consume
+    self.connection.process_data_events()
+  File "/usr/lib/python2.6/site-packages/pika-0.9.14p0-py2.6.egg/pika/adapters/blocking_connection.py", line 236, in process_data_events
+    raise exceptions.ConnectionClosed()
+ConnectionClosed
+

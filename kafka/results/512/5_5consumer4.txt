@@ -1,0 +1,72 @@
+connecting to:  192.168.0.170
+consumer received  13613 messages in 10.0146560669 secs ; rate=1359.30778941 msgs/sec
+consumer received  33908 messages in 20.0246632099 secs ; rate=1693.31187469 msgs/sec
+consumer received  56702 messages in 30.0348231792 secs ; rate=1887.8752727 msgs/sec
+consumer received  81513 messages in 40.0432271957 secs ; rate=2035.62514084 msgs/sec
+consumer received  106387 messages in 50.0535740852 secs ; rate=2125.4626057 msgs/sec
+consumer received  130685 messages in 60.0590531826 secs ; rate=2175.9417286 msgs/sec
+Exception in thread Thread-2:
+Traceback (most recent call last):
+  File "/usr/lib64/python2.6/threading.py", line 532, in __bootstrap_inner
+    self.run()
+  File "/home/mce/pymsg/kafka/src/perftest.py", line 56, in run
+    textMessage = self.consumer.get_messages(block=True, timeout=1000000)
+  File "build/bdist.linux-x86_64/egg/kafka/consumer.py", line 303, in get_messages
+    messages.append(next(iterator))
+  File "build/bdist.linux-x86_64/egg/kafka/consumer.py", line 331, in __iter__
+    yield it.next()
+  File "build/bdist.linux-x86_64/egg/kafka/consumer.py", line 372, in __iter_partition__
+    min_bytes=fetch_size)
+  File "build/bdist.linux-x86_64/egg/kafka/client.py", line 277, in send_fetch_request
+    KafkaProtocol.decode_fetch_response)
+  File "build/bdist.linux-x86_64/egg/kafka/client.py", line 180, in _send_broker_aware_request
+    for response in decoder_fn(response):
+  File "build/bdist.linux-x86_64/egg/kafka/protocol.py", line 279, in decode_fetch_response
+    (message_set, cur) = read_int_string(data, cur)
+  File "build/bdist.linux-x86_64/egg/kafka/util.py", line 50, in read_int_string
+    raise BufferUnderflowError("Not enough data left")
+BufferUnderflowError: Not enough data left
+
+consumer received  152458 messages in 70.0687291622 secs ; rate=2175.83509538 msgs/sec
+consumer received  152458 messages in 80.0786499977 secs ; rate=1903.8532743 msgs/sec
+consumer received  152458 messages in 90.0886850357 secs ; rate=1692.31019345 msgs/sec
+consumer received  152458 messages in 100.098749161 secs ; rate=1523.07597526 msgs/sec
+consumer received  152458 messages in 110.108673096 secs ; rate=1384.61390655 msgs/sec
+consumer received  152458 messages in 120.117105007 secs ; rate=1269.24470908 msgs/sec
+consumer received  152458 messages in 130.122248173 secs ; rate=1171.65205905 msgs/sec
+consumer received  152458 messages in 140.122735023 secs ; rate=1088.03185989 msgs/sec
+consumer received  152458 messages in 150.130509138 secs ; rate=1015.50311709 msgs/sec
+consumer received  152458 messages in 160.131864071 secs ; rate=952.077844623 msgs/sec
+consumer received  152458 messages in 170.137842178 secs ; rate=896.08518627 msgs/sec
+consumer received  152458 messages in 180.14767909 secs ; rate=846.294555499 msgs/sec
+consumer received  152458 messages in 190.157773018 secs ; rate=801.744770042 msgs/sec
+consumer received  152458 messages in 200.166308165 secs ; rate=761.656651401 msgs/sec
+consumer received  152458 messages in 210.175651073 secs ; rate=725.383740796 msgs/sec
+consumer received  152458 messages in 220.179198027 secs ; rate=692.426902116 msgs/sec
+consumer received  152458 messages in 230.188606024 secs ; rate=662.317751662 msgs/sec
+consumer received  152458 messages in 240.19868207 secs ; rate=634.716221947 msgs/sec
+consumer received  152458 messages in 250.208082199 secs ; rate=609.324841388 msgs/sec
+consumer received  152458 messages in 260.21736908 secs ; rate=585.887101 msgs/sec
+consumer received  152458 messages in 270.226680994 secs ; rate=564.185592034 msgs/sec
+consumer received  152458 messages in 280.23647213 secs ; rate=544.033397371 msgs/sec
+consumer received  152458 messages in 290.246260166 secs ; rate=525.27119527 msgs/sec
+consumer received  152458 messages in 300.247572184 secs ; rate=507.774297361 msgs/sec
+consumer received  152458 messages in 310.257659197 secs ; rate=491.391575617 msgs/sec
+consumer received  152458 messages in 320.267752171 secs ; rate=476.032941084 msgs/sec
+consumer received  152458 messages in 330.277816057 secs ; rate=461.605329174 msgs/sec
+consumer received  152458 messages in 340.279288054 secs ; rate=448.037848181 msgs/sec
+consumer received  152458 messages in 350.288875103 secs ; rate=435.23506122 msgs/sec
+consumer received  152458 messages in 360.293850183 secs ; rate=423.149048818 msgs/sec
+consumer received  152458 messages in 370.30393815 secs ; rate=411.710447265 msgs/sec
+consumer received  152458 messages in 380.314048052 secs ; rate=400.87396398 msgs/sec
+consumer received  152458 messages in 390.323683023 secs ; rate=390.593772889 msgs/sec
+consumer received  152458 messages in 400.331230164 secs ; rate=380.829644337 msgs/sec
+consumer received  152458 messages in 410.337613106 secs ; rate=371.542834804 msgs/sec
+consumer received  152458 messages in 420.347258091 secs ; rate=362.695359766 msgs/sec
+consumer received  152458 messages in 430.353789091 secs ; rate=354.26201387 msgs/sec
+consumer received  152458 messages in 440.363677025 secs ; rate=346.209299164 msgs/sec
+consumer received  152458 messages in 450.373673201 secs ; rate=338.514458264 msgs/sec
+consumer received  152458 messages in 460.374662161 secs ; rate=331.160710028 msgs/sec
+consumer received  152458 messages in 470.384664059 secs ; rate=324.113457876 msgs/sec
+consumer received  152458 messages in 480.394728184 secs ; rate=317.359852337 msgs/sec
+consumer received  152458 messages in 490.404791117 secs ; rate=310.881954585 msgs/sec
